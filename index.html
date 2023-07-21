@@ -1,1272 +1,1177 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous">
-    <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"
       type="text/javascript"></script> -->
 
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js"
-      referrerpolicy="origin"></script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
-    <script>
-      tinymce.init({
-        selector: 'textarea#editor',
-        skin: 'bootstrap',
-        plugins: 'lists, link, image, media',
-        toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
-        menubar: false,
-      });
-    </script>
+  <script>
+    tinymce.init({
+      selector: 'textarea#editor',
+      skin: 'bootstrap',
+      plugins: 'lists, link, image, media',
+      toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
+      menubar: false,
+    });
+  </script>
 
-    <style>
-      .order-card {
-        color: #fff;
-      }
-      
-      .bg-c-blue {
-          background: linear-gradient(45deg,#4099ff,#73b4ff);
-      }
-      
-      .bg-c-green {
-          background: linear-gradient(45deg,#2ed8b6,#59e0c5);
-      }
-      
-      .bg-c-yellow {
-          background: linear-gradient(45deg,#FFB64D,#ffcb80);
-      }
-      
-      .bg-c-pink {
-          background: linear-gradient(45deg,#FF5370,#ff869a);
-      }
-          
-      .card {
-          border-radius: 5px;
-          -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
-          box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
-          border: none;
-          margin-bottom: 30px;
-          -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-      }
-      
-      .card .card-block {
-          padding: 1rem;
-      }
-      
-      .order-card i {
-          font-size: 26px;
-      }
-      
-      .f-left {
-          float: left;
-      }
-      
-      .f-right {
-          float: right;
-      }
-      </style>
+  <style>
+    .order-card {
+      color: #fff;
+    }
 
-      <style>
-        img {
-          max-width: 100%;
-          height: auto;
-          vertical-align: top;
-      }
-      .mb-1 {
-          margin-bottom: 0.25rem!important;
-      }
-      .h5, h5 {
-          font-size: 1.25rem;
-      }
-      a {
-      text-decoration:none;    
-      }
-      .team-style07 {
-          background: #fff;
-          text-align: center;
-          padding: 30px;
-          box-shadow: 0px 10px 30px 0px rgb(26 29 72 / 7%);
-          border-radius: 15px;
-          transition: all .3s ease-in-out;
-      }
-      .team-style07 {
-          background: #fff;
-          text-align: center;
-          padding: 30px;
-          box-shadow: 0px 10px 30px 0px rgba(26, 29, 72, 0.07);
-          border-radius: 15px;
-          transition: all .3s ease-in-out
-      }
-      
-      .team-style07:hover {
-          background: #292dc2
-      }
-      
-      .team-style07:hover h3 a,
-      .team-style07:hover p {
-          color: #fff
-      }
-      
-      .team-style07 .team-thumb {
-          position: relative
-      }
-      
-      .team-style07 .team-thumb .team-social {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0
-      }
-      
-      .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(1) {
-          left: 40px;
-          position: absolute;
-          bottom: 0;
-          z-index: 10;
-          opacity: 1;
-          transition: all .4s ease-in-out 0s
-      }
-      
-      .team-style07 .team-thumb .team-social .styled-icons li:nth-child(1) {
-          position: absolute;
-          opacity: 0;
-          left: -10px;
-          bottom: -20px;
-          z-index: 10;
-          transition: all .3s ease-in-out
-      }
-      
-      .team-style07 .team-thumb .team-social .styled-icons li:nth-child(2) {
-          position: absolute;
-          opacity: 0;
-          left: 0;
-          right: 0;
-          bottom: -40px;
-          transition: all .3s ease-in-out
-      }
-      
-      .team-style07 .team-thumb .team-social .styled-icons li:nth-child(3) {
-          opacity: 0;
-          position: absolute;
-          right: 0;
-          bottom: -20px;
-          transition: all .3s ease-in-out
-      }
-      
-      .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(3) {
-          position: absolute;
-          right: 40px;
-          bottom: 0;
-          opacity: 1;
-          transition: all .4s ease-in-out 0s
-      }
-      
-      .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(2) {
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: -20px;
-          opacity: 1;
-          transition: all .5s ease-in-out 0s
-      }
-      
-      .team-style07 .team-thumb .team-social .styled-icons li a {
-          background: #3457f1;
-          color: #fff;
-          height: 40px;
-          width: 40px;
-          line-height: 40px;
-          border: none;
-          font-size: 16px;
-          transition: all .3s ease-in-out
-      }
-      .mb-1-9, .my-1-9 {
-          margin-bottom: 1.9rem;
-      }
-      
-      .styled-icons a {
-          border: 2px solid transparent;
-          color: #333;
-          display: inline-block;
-          font-size: 16px;
-          height: 36px;
-          line-height: 2;
-          margin-right: 4px;
-          position: relative;
-          text-align: center;
-          text-decoration: none;
-          width: 36px;
-          transition: all .2s ease;
-          border-radius: 50%
-      }
-      
-      .styled-icons li {
-          display: inline-block;
-          margin-bottom: 5px;
-          margin-top: 0;
-          padding-left: 0 !important
-      }
+    .bg-c-blue {
+      background: linear-gradient(45deg, #4099ff, #73b4ff);
+    }
 
-      .styled-icons-item {
-        background-color: gray;
-      }
-    </style>
+    .bg-c-green {
+      background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+    }
 
-    <style>
-      .main-body {
-        padding: 15px;
-      }
-      .card {
-          box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
-      }
-      
-      .card {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          min-width: 0;
-          word-wrap: break-word;
-          background-color: #fff;
-          background-clip: border-box;
-          border: 0 solid rgba(0,0,0,.125);
-          border-radius: .25rem;
-      }
-      
-      .card-body {
-          flex: 1 1 auto;
-          min-height: 1px;
-          padding: 1rem;
-      }
-      
-      .gutters-sm {
-          margin-right: -8px;
-          margin-left: -8px;
-      }
-      
-      .gutters-sm>.col, .gutters-sm>[class*=col-] {
-          padding-right: 8px;
-          padding-left: 8px;
-      }
-      .mb-3, .my-3 {
-          margin-bottom: 1rem!important;
-      }
-      
-      .bg-gray-300 {
-          background-color: #e2e8f0;
-      }
-      .h-100 {
-          height: 100%!important;
-      }
-      .shadow-none {
-          box-shadow: none!important;
-      }
-    </style>
-    <style>
-      .card {
-        border: none;
-        margin-bottom: 24px;
-        -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
-        box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
-      }
-      
-      .avatar-xs {
-          height: 2.3rem;
-          width: 2.3rem;
-      }
-    </style>
-  </head>
+    .bg-c-yellow {
+      background: linear-gradient(45deg, #FFB64D, #ffcb80);
+    }
 
-  <body>
-    <div class="container-fluid p-0">
-      <div class="row g-0 sticky-top">
-        <nav class="navbar navbar-expand-sm shadow-lg navbar-dark bg-secondary">
-          <div class="container-fluid">
-            <div class="col-md-2">
-              <a class="navbar-brand" href="#">
-                <span>Navbar</span>
-                <a class="btn btn-sm btn-dark" data-bs-toggle="collapse"
-                  href="#collapseExample" role="button" aria-expanded="true"
-                  aria-controls="collapseExample">
-                  <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
-                </a>
+    .bg-c-pink {
+      background: linear-gradient(45deg, #FF5370, #ff869a);
+    }
+
+    .card {
+      border-radius: 5px;
+      -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+      box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+      border: none;
+      margin-bottom: 30px;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card .card-block {
+      padding: 1rem;
+    }
+
+    .order-card i {
+      font-size: 26px;
+    }
+
+    .f-left {
+      float: left;
+    }
+
+    .f-right {
+      float: right;
+    }
+  </style>
+
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.25rem !important;
+    }
+
+    .h5,
+    h5 {
+      font-size: 1.25rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .team-style07 {
+      background: #fff;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0px 10px 30px 0px rgb(26 29 72 / 7%);
+      border-radius: 15px;
+      transition: all .3s ease-in-out;
+    }
+
+    .team-style07 {
+      background: #fff;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0px 10px 30px 0px rgba(26, 29, 72, 0.07);
+      border-radius: 15px;
+      transition: all .3s ease-in-out
+    }
+
+    .team-style07:hover {
+      background: #292dc2
+    }
+
+    .team-style07:hover h3 a,
+    .team-style07:hover p {
+      color: #fff
+    }
+
+    .team-style07 .team-thumb {
+      position: relative
+    }
+
+    .team-style07 .team-thumb .team-social {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0
+    }
+
+    .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(1) {
+      left: 40px;
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      opacity: 1;
+      transition: all .4s ease-in-out 0s
+    }
+
+    .team-style07 .team-thumb .team-social .styled-icons li:nth-child(1) {
+      position: absolute;
+      opacity: 0;
+      left: -10px;
+      bottom: -20px;
+      z-index: 10;
+      transition: all .3s ease-in-out
+    }
+
+    .team-style07 .team-thumb .team-social .styled-icons li:nth-child(2) {
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+      transition: all .3s ease-in-out
+    }
+
+    .team-style07 .team-thumb .team-social .styled-icons li:nth-child(3) {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      transition: all .3s ease-in-out
+    }
+
+    .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(3) {
+      position: absolute;
+      right: 40px;
+      bottom: 0;
+      opacity: 1;
+      transition: all .4s ease-in-out 0s
+    }
+
+    .team-style07:hover .team-thumb .team-social .styled-icons li:nth-child(2) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+      opacity: 1;
+      transition: all .5s ease-in-out 0s
+    }
+
+    .team-style07 .team-thumb .team-social .styled-icons li a {
+      background: #3457f1;
+      color: #fff;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border: none;
+      font-size: 16px;
+      transition: all .3s ease-in-out
+    }
+
+    .mb-1-9,
+    .my-1-9 {
+      margin-bottom: 1.9rem;
+    }
+
+    .styled-icons a {
+      border: 2px solid transparent;
+      color: #333;
+      display: inline-block;
+      font-size: 16px;
+      height: 36px;
+      line-height: 2;
+      margin-right: 4px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      width: 36px;
+      transition: all .2s ease;
+      border-radius: 50%
+    }
+
+    .styled-icons li {
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-top: 0;
+      padding-left: 0 !important
+    }
+
+    .styled-icons-item {
+      background-color: gray;
+    }
+  </style>
+
+  <style>
+    .main-body {
+      padding: 15px;
+    }
+
+    .card {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0 solid rgba(0, 0, 0, .125);
+      border-radius: .25rem;
+    }
+
+    .card-body {
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1rem;
+    }
+
+    .gutters-sm {
+      margin-right: -8px;
+      margin-left: -8px;
+    }
+
+    .gutters-sm>.col,
+    .gutters-sm>[class*=col-] {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+
+    .mb-3,
+    .my-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .bg-gray-300 {
+      background-color: #e2e8f0;
+    }
+
+    .h-100 {
+      height: 100% !important;
+    }
+
+    .shadow-none {
+      box-shadow: none !important;
+    }
+  </style>
+  <style>
+    .card {
+      border: none;
+      margin-bottom: 24px;
+      -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, .44);
+      box-shadow: 0 0 13px 0 rgba(236, 236, 241, .44);
+    }
+
+    .avatar-xs {
+      height: 2.3rem;
+      width: 2.3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <div class="row g-0 sticky-top">
+      <nav class="navbar navbar-expand-sm shadow-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+          <div class="col-md-2">
+            <a class="navbar-brand" href="#">
+              <span>Navbar</span>
+              <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="true" aria-controls="collapseExample">
+                <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
               </a>
-            </div>
-            <div class="col-md-3">
-              <button class="d-sm-none btn btn-sm" type="button"
-                data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
-                aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-              <form class="d-flex my-2">
-                  <input class="form-control rounded-pill" type="text"
-                  placeholder="Keyword">
-                <button
-                  class="btn btn-outline-dark my-2 my-sm-0 rounded-pill bg-dark text-white"
-                  type="submit"><i class="fas fa-search"></i></button>
-              </form>
-            </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <button class="d-sm-none btn btn-sm" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+            <form class="d-flex my-2">
+              <input class="form-control rounded-pill" type="text" placeholder="Keyword">
+              <button class="btn btn-outline-dark my-2 my-sm-0 rounded-pill bg-dark text-white" type="submit"><i
+                  class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row g-0 d-flex">
+      <nav class="col-2 bg-secondary show vh-100" style="position: sticky; top: 0;" id="collapseExample">
+        <div class="list-group text-center">
+          <ul class="nav nav-tabs flex-column shadow" id="mySidebarTab" role="tablist">
+            <li class="nav-item">
+              <a href="#main" class="text-decoration-none nav-link px-0 list-group-item" style="border: none;"
+                id="main-tab" data-toggle="tab" href="#main" role="tab" aria-controls="main" aria-selected="true">
+                <h1 class="h4 py-3 text-center text-white">
+                  <i class="fas fa-user-astronaut"></i>
+                  <span class="d-none d-md-inline">
+                    <span class="text-dark">ROBOT</span> Dashboard
+                  </span>
+                </h1>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 list-group-item list-group-item-action" id="home-tab" data-toggle="tab"
+                href="#home" role="tab" aria-controls="home" aria-selected="true">
+                <i class="fas fa-home"></i>
+                <span class="d-none d-md-inline">Products</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 list-group-item list-group-item-action" id="profile-tab" data-toggle="tab"
+                href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                <i class="fas fa-user"></i>
+                <span class="d-none d-md-inline">Post</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 list-group-item list-group-item-action" id="messages-tab" data-toggle="tab"
+                href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+                <i class="fas fa-envelope-open-text"></i>
+                <span class="d-none d-md-inline">Messages</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0 list-group-item list-group-item-action" id="settings-tab" data-toggle="tab"
+                href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+                <i class="fas fa-cog"></i>
+                <span class="d-none d-md-inline">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="col bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
+          <div class="flex-fill"></div>
+          <div class="navbar nav">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fas fa-user-circle"></i>
+              </a>
+              <ul class="dropdown-menu" style="margin-left: -50px;">
+                <li>
+                  <a href="#" class="dropdown-item">User Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fas fa-cog"></i></a>
+            </li>
           </div>
         </nav>
-      </div>
-      <div class="row g-0 d-flex">
-        <nav class="col-2 bg-secondary show vh-100"
-          style="position: sticky; top: 0;" id="collapseExample">
-          <div class="list-group text-center">
-            <ul class="nav nav-tabs flex-column shadow" id="mySidebarTab" role="tablist">
-              <li class="nav-item">
-                <a href="#main"
-                  class="text-decoration-none nav-link px-0 list-group-item"
-                  style="border: none;" id="main-tab" data-toggle="tab"
-                  href="#main" role="tab" aria-controls="main"
-                  aria-selected="true">
-                  <h1 class="h4 py-3 text-center text-white">
-                    <i class="fas fa-user-astronaut"></i>
-                    <span class="d-none d-md-inline">
-                      <span class="text-dark">ROBOT</span> Dashboard
-                    </span>
-                  </h1>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0 list-group-item list-group-item-action"
-                  id="home-tab" data-toggle="tab" href="#home" role="tab"
-                  aria-controls="home" aria-selected="true">
-                  <i class="fas fa-home"></i>
-                  <span class="d-none d-md-inline">Products</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0 list-group-item list-group-item-action"
-                  id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                  aria-controls="profile" aria-selected="false">
-                  <i class="fas fa-user"></i>
-                  <span class="d-none d-md-inline">Post</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0 list-group-item list-group-item-action"
-                  id="messages-tab" data-toggle="tab" href="#messages"
-                  role="tab" aria-controls="messages" aria-selected="false">
-                  <i class="fas fa-envelope-open-text"></i>
-                  <span class="d-none d-md-inline">Messages</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-0 list-group-item list-group-item-action"
-                  id="settings-tab" data-toggle="tab" href="#settings"
-                  role="tab" aria-controls="settings" aria-selected="false">
-                  <i class="fas fa-cog"></i>
-                  <span class="d-none d-md-inline">Settings</span>
-                </a>
-              </li>
-            </ul>
+        <div class="tab-content" id="mySidebarTabContent">
+          <div class="tab-pane active" id="main" role="tabpanel" aria-labelledby="main-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-blue order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-green order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-yellow order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-pink order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-credit-card f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-blue order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-green order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-yellow order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card bg-c-pink order-card">
+                    <div class="card-block">
+                      <h6 class="m-b-20">Orders Received</h6>
+                      <h2 class="text-right"><i class="fa fa-credit-card f-left"></i><span>486</span></h2>
+                      <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
-        <main class="col bg-light">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-5">
-            <div class="flex-fill"></div>
-            <div class="navbar nav">
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown">
-                  <i class="fas fa-user-circle"></i>
-                </a>
-                <ul class="dropdown-menu" style="margin-left: -50px;">
-                  <li>
-                    <a href="#" class="dropdown-item">User Profile</a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-item">Logout</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fas fa-cog"></i></a>
-              </li>
-            </div>
-          </nav>
-          <div class="tab-content" id="mySidebarTabContent">
-            <div class="tab-pane active" id="main" role="tabpanel"
-              aria-labelledby="main-tab">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-blue order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+          <div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-3 col-md-6">
+                  <div class="card bg-pattern">
+                    <div class="card-body">
+                      <div class="float-right">
+                        <i class="fas fa-folder text-primary h4 ml-3"></i>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-green order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-yellow order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-pink order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i
-                            class="fa fa-credit-card f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-blue order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-green order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-yellow order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="card bg-c-pink order-card">
-                      <div class="card-block">
-                        <h6 class="m-b-20">Orders Received</h6>
-                        <h2 class="text-right"><i
-                            class="fa fa-credit-card f-left"></i><span>486</span></h2>
-                        <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
-                      </div>
+                      <h5 class="font-size-20 mt-0 pt-1">24</h5>
+                      <p class="text-muted mb-0">Total Projects</p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="home" role="tabpanel"
-              aria-labelledby="home-tab">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xl-3 col-md-6">
-                    <div class="card bg-pattern">
-                      <div class="card-body">
-                        <div class="float-right">
-                          <i class="fas fa-folder text-primary h4 ml-3"></i>
-                        </div>
-                        <h5 class="font-size-20 mt-0 pt-1">24</h5>
-                        <p class="text-muted mb-0">Total Projects</p>
+                <div class="col-xl-3 col-md-6">
+                  <div class="card bg-pattern">
+                    <div class="card-body">
+                      <div class="float-right">
+                        <i class="fas fa-file-archive text-primary h4 ml-3"></i>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-md-6">
-                    <div class="card bg-pattern">
-                      <div class="card-body">
-                        <div class="float-right">
-                          <i class="fas fa-file-archive text-primary h4 ml-3"></i>
-                        </div>
-                        <h5 class="font-size-20 mt-0 pt-1">18</h5>
-                        <p class="text-muted mb-0">Completed Projects</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-md-6">
-                    <div class="card bg-pattern">
-                      <div class="card-body">
-                        <div class="float-right">
-                          <i class="fa fa-file text-primary h4 ml-3"></i>
-                        </div>
-                        <h5 class="font-size-20 mt-0 pt-1">06</h5>
-                        <p class="text-muted mb-0">Pending Projects</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-md-6">
-                    <div class="card">
-                      <div class="card-body">
-                        <form>
-                          <div class="form-group mb-0">
-                            <label>Search</label>
-                            <div class="input-group mb-0">
-                              <input type="text" class="form-control"
-                                placeholder="Search..."
-                                aria-describedby="project-search-addon" />
-                              <div class="input-group-append">
-                                <button class="btn btn-danger" type="button"
-                                  id="project-search-addon"><i
-                                    class="fa fa-search search-icon font-12"></i></button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
+                      <h5 class="font-size-20 mt-0 pt-1">18</h5>
+                      <p class="text-muted mb-0">Completed Projects</p>
                     </div>
                   </div>
                 </div>
-                <!-- end row -->
-
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="table-responsive table-sm project-list">
-                          <table
-                            class="table project-table  table-centered">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Projects</th>
-                                <th scope="col">Team</th>
-                                <th scope="col"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>New admin Design</td>
-                                <td>
-                                  <div class="team">
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Roger Drake">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Reggie James">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Gerald Mayberry">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar8.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="action">
-                                    <a href="#" class="text-success mr-4"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Edit"> <i
-                                        class="fas fa-tasks m-1"></i></a>
-                                    <a href="#" class="text-primary mr-4"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Edit"> <i
-                                        class="fas fa-edit m-1"></i></a>
-                                    <a href="#" class="text-danger"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Close"> 
-                                      <i class="fas fa-trash m-1"></i>
-                                    </a>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Landing page Design</td>
-                                <td>
-                                  <div class="team">
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Deborah Mixon">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Scott Jessie">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="action">
-                                    <a href="#" class="text-success mr-4"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Edit"> <i
-                                        class="fas fa-tasks m-1"></i></a>
-                                    <a href="#" class="text-primary mr-4"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Edit"> <i
-                                        class="fas fa-edit m-1"></i></a>
-                                    <a href="#" class="text-danger"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Close"> 
-                                      <i class="fas fa-trash m-1"></i>
-                                    </a>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Multipurpose Landing Template</td>
-                                <td>
-                                  <div class="team">
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Neil Wing">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Stanley Barber">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Roger Drake">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar5.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-
-                                    <a href="javascript: void(0);"
-                                      class="team-member" data-toggle="tooltip"
-                                      data-placement="top" title
-                                      data-original-title="Jack Krier">
-                                      <img
-                                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
-                                        class="rounded-circle avatar-xs" alt />
-                                    </a>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="action">
-                                    <a href="#" class="text-success mr-4"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Edit"> <i
-                                        class="fas fa-tasks m-1"></i></a>
-                                    <a href="#" class="text-primary mr-4"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Edit"> <i
-                                        class="fas fa-edit m-1"></i></a>
-                                    <a href="#" class="text-danger"
-                                      data-toggle="tooltip" data-placement="top"
-                                      title data-original-title="Close"> 
-                                      <i class="fas fa-trash m-1"></i>
-                                    </a>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <!-- end project-list -->
-
-                        <div class="pt-3">
-                          <ul class="pagination justify-content-end mb-0">
-                            <li class="page-item disabled">
-                              <a class="page-link" href="#" tabindex="-1"
-                                aria-disabled="true">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active"><a class="page-link"
-                                href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                            </li>
-                          </ul>
-                        </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="card bg-pattern">
+                    <div class="card-body">
+                      <div class="float-right">
+                        <i class="fa fa-file text-primary h4 ml-3"></i>
                       </div>
+                      <h5 class="font-size-20 mt-0 pt-1">06</h5>
+                      <p class="text-muted mb-0">Pending Projects</p>
                     </div>
                   </div>
                 </div>
-                <!-- end row -->
-              </div>
-            </div>
-            <div class="tab-pane" id="profile" role="tabpanel"
-              aria-labelledby="profile-tab">
-              <div class="container">
-                <div class="row">
-                  <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="list-tab"
-                        data-bs-toggle="tab" data-bs-target="#list" type="button"
-                        role="tab" aria-controls="list" aria-selected="true">List</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="comments-tab"
-                        data-bs-toggle="tab" data-bs-target="#comments"
-                        type="button" role="tab" aria-controls="comments"
-                        aria-selected="false">Comments</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="post-tab" data-bs-toggle="tab"
-                        data-bs-target="#post" type="button" role="tab"
-                        aria-controls="post" aria-selected="false">New Post</button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="row mt-4 mb-4">
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="list"
-                      role="tabpanel" aria-labelledby="list-tab">
-                      <div class="col-md-12 col-lg-6">
-                        <h1 class="h2 mb-4">Submit issue</h1>
-                        <div class="form-group">
-                          <label for="name">Name</label>
-                          <input type="text" class="form-control" id="name"
-                            placeholder="Your name">
-                        </div>
-
-                        <div class="form-group">
-                          <label for="email">Email address</label>
-                          <input type="email" class="form-control" id="email"
-                            placeholder="Enter email">
-                          <small class="form-text text-muted">We'll never share
-                            your email with anyone else.</small>
-                        </div>
-
-                        <div class="form-group">
-                          <label>Describe the condition in detail</label>
-                          <textarea id="editor"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="phone">Primary phone number</label>
-                          <input type="text" class="form-control" id="phone"
-                            placeholder>
-                        </div>
-
-                        <hr>
-
-                        <div class="form-group form-check">
-                          <input type="checkbox" class="form-check-input"
-                            id="terms">
-                          <label class="form-check-label" for="terms">I agree to
-                            the <a href="#">terms and conditions</a></label>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="comments" role="tabpanel"
-                      aria-labelledby="comments-tab">
-                      <div class="col-md-12 col-lg-6">
-                        Comments
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="post" role="tabpanel"
-                      aria-labelledby="post-tab">
-                      <div class="col-md-12 col-lg-6">
-                        New Post
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="messages" role="tabpanel"
-              aria-labelledby="messages-tab">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".2s"
-                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"><a href="#!">Elmer Chavez</a></h3>
-                      <p class="mb-0">Founder</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".3s"
-                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"><a href="#!">Elmira Milani</a></h3>
-                      <p class="mb-0">Co-Founder</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".4s"
-                    style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"> <a href="#!">Dorcas Laueri</a></h3>
-                      <p class="mb-0">Developer</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".5s"
-                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"> <a href="#!">Steven Miloler</a></h3>
-                      <p class="mb-0">Designer</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".2s"
-                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"><a href="#!">Elmer Chavez</a></h3>
-                      <p class="mb-0">Founder</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".3s"
-                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"><a href="#!">Elmira Milani</a></h3>
-                      <p class="mb-0">Co-Founder</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".4s"
-                    style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"> <a href="#!">Dorcas Laueri</a></h3>
-                      <p class="mb-0">Developer</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp"
-                    data-wow-delay=".5s"
-                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                    <div class="team-style07">
-                      <div class="team-thumb mb-1-9">
-                        <div class="thumb"><img
-                            src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                            class="rounded-circle" alt="..."></div>
-                        <div class="team-social">
-                          <ul class="styled-icons">
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-twitter"></i></a></li>
-                            <li><a class="styled-icons-item" href="#!"><i
-                                  class="fab fa-linkedin-in"></i></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <h3 class="h5 mb-1"> <a href="#!">Steven Miloler</a></h3>
-                      <p class="mb-0">Designer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="settings" role="tabpanel"
-              aria-labelledby="settings-tab">
-              <div class="container">
-                <div class="main-body">
-                  <!-- Breadcrumb -->
-                  <nav aria-label="breadcrumb" class="main-breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">User
-                        Profile</li>
-                    </ol>
-                  </nav>
-                  <!-- /Breadcrumb -->
-                  <div class="row gutters-sm">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <div
-                            class="d-flex flex-column align-items-center text-center">
-                            <img
-                              src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                              alt="Admin" class="rounded-circle" width="150">
-                            <div class="mt-3">
-                              <h4>John Doe</h4>
-                              <p class="text-secondary mb-1">Full Stack
-                                Developer</p>
-                              <p class="text-muted font-size-sm">Bay Area, San
-                                Francisco, CA</p>
-                              <button class="btn btn-primary">Follow</button>
-                              <button class="btn btn-outline-primary">Message</button>
+                <div class="col-xl-3 col-md-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group mb-0">
+                          <label>Search</label>
+                          <div class="input-group mb-0">
+                            <input type="text" class="form-control" placeholder="Search..."
+                              aria-describedby="project-search-addon" />
+                            <div class="input-group-append">
+                              <button class="btn btn-danger" type="button" id="project-search-addon"><i
+                                  class="fa fa-search search-icon font-12"></i></button>
                             </div>
                           </div>
                         </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end row -->
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive table-sm project-list">
+                        <table class="table project-table  table-centered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Projects</th>
+                              <th scope="col">Team</th>
+                              <th scope="col"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>New admin Design</td>
+                              <td>
+                                <div class="team">
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Roger Drake">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Reggie James">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Gerald Mayberry">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar8.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="action">
+                                  <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Edit"> <i class="fas fa-tasks m-1"></i></a>
+                                  <a href="#" class="text-primary mr-4" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Edit"> <i class="fas fa-edit m-1"></i></a>
+                                  <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Close">
+                                    <i class="fas fa-trash m-1"></i>
+                                  </a>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Landing page Design</td>
+                              <td>
+                                <div class="team">
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Deborah Mixon">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Scott Jessie">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="action">
+                                  <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Edit"> <i class="fas fa-tasks m-1"></i></a>
+                                  <a href="#" class="text-primary mr-4" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Edit"> <i class="fas fa-edit m-1"></i></a>
+                                  <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Close">
+                                    <i class="fas fa-trash m-1"></i>
+                                  </a>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Multipurpose Landing Template</td>
+                              <td>
+                                <div class="team">
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Neil Wing">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Stanley Barber">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Roger Drake">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+
+                                  <a href="javascript: void(0);" class="team-member" data-toggle="tooltip"
+                                    data-placement="top" title data-original-title="Jack Krier">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                      class="rounded-circle avatar-xs" alt />
+                                  </a>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="action">
+                                  <a href="#" class="text-success mr-4" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Edit"> <i class="fas fa-tasks m-1"></i></a>
+                                  <a href="#" class="text-primary mr-4" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Edit"> <i class="fas fa-edit m-1"></i></a>
+                                  <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title
+                                    data-original-title="Close">
+                                    <i class="fas fa-trash m-1"></i>
+                                  </a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      <div class="card mt-3">
-                        <ul class="list-group list-group-flush">
-                          <li
-                            class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                            <h6 class="mb-0"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-globe mr-2 icon-inline"><circle
-                                  cx="12" cy="12" r="10"></circle><line x1="2"
-                                  y1="12" x2="22" y2="12"></line><path
-                                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Website</h6>
-                            <span class="text-secondary">https://bootdey.com</span>
+                      <!-- end project-list -->
+
+                      <div class="pt-3">
+                        <ul class="pagination justify-content-end mb-0">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                           </li>
-                          <li
-                            class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                            <h6 class="mb-0"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-github mr-2 icon-inline"><path
-                                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Github</h6>
-                            <span class="text-secondary">bootdey</span>
-                          </li>
-                          <li
-                            class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                            <h6 class="mb-0"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-twitter mr-2 icon-inline text-info"><path
-                                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>Twitter</h6>
-                            <span class="text-secondary">@bootdey</span>
-                          </li>
-                          <li
-                            class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                            <h6 class="mb-0"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-instagram mr-2 icon-inline text-danger"><rect
-                                  x="2" y="2" width="20" height="20" rx="5"
-                                  ry="5"></rect><path
-                                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
-                                  x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Instagram</h6>
-                            <span class="text-secondary">bootdey</span>
-                          </li>
-                          <li
-                            class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                            <h6 class="mb-0"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="feather feather-facebook mr-2 icon-inline text-primary"><path
-                                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>Facebook</h6>
-                            <span class="text-secondary">bootdey</span>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="col-md-8">
-                      <div class="card mb-3">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Full Name</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              Kenneth Valdez
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Email</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              fip@jukmuh.al
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Phone</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              (239) 816-9029
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Mobile</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              (320) 380-4539
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Address</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              Bay Area, San Francisco, CA
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <a class="btn btn-info " target="__blank"
-                                href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end row -->
+            </div>
+          </div>
+          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="container">
+              <div class="row">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="list-tab" data-bs-toggle="tab" data-bs-target="#list"
+                      type="button" role="tab" aria-controls="list" aria-selected="true">List</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="comments-tab" data-bs-toggle="tab" data-bs-target="#comments"
+                      type="button" role="tab" aria-controls="comments" aria-selected="false">Comments</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="post-tab" data-bs-toggle="tab" data-bs-target="#post" type="button"
+                      role="tab" aria-controls="post" aria-selected="false">New Post</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="col-md-12 col-lg-6">
+                      <h1 class="h2 mb-4">Submit issue</h1>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        <small class="form-text text-muted">We'll never share
+                          your email with anyone else.</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Describe the condition in detail</label>
+                        <textarea id="editor"></textarea>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="phone">Primary phone number</label>
+                        <input type="text" class="form-control" id="phone" placeholder>
+                      </div>
+
+                      <hr>
+
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="terms">
+                        <label class="form-check-label" for="terms">I agree to
+                          the <a href="#">terms and conditions</a></label>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+                    <div class="col-md-12 col-lg-6">
+                      Comments
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="post" role="tabpanel" aria-labelledby="post-tab">
+                    <div class="col-md-12">
+                      <div class="container py-5">
+                        <div class="row">
+                          <div class="col-lg-7 mx-auto">
+                            <div class="card rounded-0 border-0 shadow">
+                              <div class="card-body p-5">
+
+                                <!--  Bootstrap table-->
+                                <div class="table-responsive">
+                                  <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                        <th scope="col"></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+
+                                <!-- Add rows button-->
+                                <a class="btn btn-primary rounded-0 btn-block" id="insertRow" href="#">Add new row</a>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="row gutters-sm">
-                        <div class="col-sm-6 mb-3">
-                          <div class="card h-100">
-                            <div class="card-body">
-                              <h6 class="d-flex align-items-center mb-3"><i
-                                  class="material-icons text-info mr-2">assignment</i>Project
-                                Status</h6>
-                              <small>Web Design</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 80%"
-                                  aria-valuenow="80" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>Website Markup</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 72%"
-                                  aria-valuenow="72" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>One Page</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 89%"
-                                  aria-valuenow="89" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>Mobile Template</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 55%"
-                                  aria-valuenow="55" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>Backend API</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 66%"
-                                  aria-valuenow="66" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".2s"
+                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"><a href="#!">Elmer Chavez</a></h3>
+                    <p class="mb-0">Founder</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".3s"
+                  style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"><a href="#!">Elmira Milani</a></h3>
+                    <p class="mb-0">Co-Founder</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".4s"
+                  style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"> <a href="#!">Dorcas Laueri</a></h3>
+                    <p class="mb-0">Developer</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".5s"
+                  style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"> <a href="#!">Steven Miloler</a></h3>
+                    <p class="mb-0">Designer</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".2s"
+                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"><a href="#!">Elmer Chavez</a></h3>
+                    <p class="mb-0">Founder</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".3s"
+                  style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"><a href="#!">Elmira Milani</a></h3>
+                    <p class="mb-0">Co-Founder</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".4s"
+                  style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"> <a href="#!">Dorcas Laueri</a></h3>
+                    <p class="mb-0">Developer</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 p-1 wow fadeInUp" data-wow-delay=".5s"
+                  style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                  <div class="team-style07">
+                    <div class="team-thumb mb-1-9">
+                      <div class="thumb"><img src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                          class="rounded-circle" alt="..."></div>
+                      <div class="team-social">
+                        <ul class="styled-icons">
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-twitter"></i></a></li>
+                          <li><a class="styled-icons-item" href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h3 class="h5 mb-1"> <a href="#!">Steven Miloler</a></h3>
+                    <p class="mb-0">Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="container">
+              <div class="main-body">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="main-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">User
+                      Profile</li>
+                  </ol>
+                </nav>
+                <!-- /Breadcrumb -->
+                <div class="row gutters-sm">
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                          <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin"
+                            class="rounded-circle" width="150">
+                          <div class="mt-3">
+                            <h4>John Doe</h4>
+                            <p class="text-secondary mb-1">Full Stack
+                              Developer</p>
+                            <p class="text-muted font-size-sm">Bay Area, San
+                              Francisco, CA</p>
+                            <button class="btn btn-primary">Follow</button>
+                            <button class="btn btn-outline-primary">Message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mt-3">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-globe mr-2 icon-inline">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <line x1="2" y1="12" x2="22" y2="12"></line>
+                              <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                              </path>
+                            </svg>Website</h6>
+                          <span class="text-secondary">https://bootdey.com</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-github mr-2 icon-inline">
+                              <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                              </path>
+                            </svg>Github</h6>
+                          <span class="text-secondary">bootdey</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-twitter mr-2 icon-inline text-info">
+                              <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                              </path>
+                            </svg>Twitter</h6>
+                          <span class="text-secondary">@bootdey</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-instagram mr-2 icon-inline text-danger">
+                              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>Instagram</h6>
+                          <span class="text-secondary">bootdey</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                          <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"
+                              class="feather feather-facebook mr-2 icon-inline text-primary">
+                              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>Facebook</h6>
+                          <span class="text-secondary">bootdey</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Full Name</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            Kenneth Valdez
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Email</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            fip@jukmuh.al
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Phone</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            (239) 816-9029
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Mobile</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            (320) 380-4539
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Address</h6>
+                          </div>
+                          <div class="col-sm-9 text-secondary">
+                            Bay Area, San Francisco, CA
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <a class="btn btn-info " target="__blank"
+                              href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row gutters-sm">
+                      <div class="col-sm-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3"><i
+                                class="material-icons text-info mr-2">assignment</i>Project
+                              Status</h6>
+                            <small>Web Design</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>Website Markup</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 72%"
+                                aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>One Page</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 89%"
+                                aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>Mobile Template</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 55%"
+                                aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>Backend API</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 66%"
+                                aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-6 mb-3">
-                          <div class="card h-100">
-                            <div class="card-body">
-                              <h6 class="d-flex align-items-center mb-3"><i
-                                  class="material-icons text-info mr-2">assignment</i>Project
-                                Status</h6>
-                              <small>Web Design</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 80%"
-                                  aria-valuenow="80" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>Website Markup</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 72%"
-                                  aria-valuenow="72" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>One Page</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 89%"
-                                  aria-valuenow="89" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>Mobile Template</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 55%"
-                                  aria-valuenow="55" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
-                              <small>Backend API</small>
-                              <div class="progress mb-3" style="height: 5px">
-                                <div class="progress-bar bg-primary"
-                                  role="progressbar" style="width: 66%"
-                                  aria-valuenow="66" aria-valuemin="0"
-                                  aria-valuemax="100"></div>
-                              </div>
+                      </div>
+                      <div class="col-sm-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h6 class="d-flex align-items-center mb-3"><i
+                                class="material-icons text-info mr-2">assignment</i>Project
+                              Status</h6>
+                            <small>Web Design</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>Website Markup</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 72%"
+                                aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>One Page</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 89%"
+                                aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>Mobile Template</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 55%"
+                                aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small>Backend API</small>
+                            <div class="progress mb-3" style="height: 5px">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 66%"
+                                aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                           </div>
                         </div>
@@ -1277,21 +1182,56 @@
               </div>
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
-          <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous">
+  </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
-    <script src="bootstrap.js"></script>
-  </body>
+  <script src="bootstrap.js"></script>
+  <script>
+    $(function () {
+
+      // Start counting from the third row
+      var counter = 3;
+
+      $("#insertRow").on("click", function (event) {
+        event.preventDefault();
+
+        var newRow = $("<tr>");
+        var cols = '';
+
+        // Table columns
+        cols += '<th scrope="row">' + counter + '</th>';
+        cols += '<td><input class="form-control rounded-0" type="text" name="firstname" placeholder="First name"></td>';
+        cols += '<td><input class="form-control rounded-0" type="text" name="lastname" placeholder="Last name"></td>';
+        cols += '<td><input class="form-control rounded-0" type="text" name="handle" placeholder="Handle"></td>';
+        cols += '<td><button class="btn btn-danger rounded-0" id ="deleteRow"><i class="fa fa-trash"></i></button</td>';
+
+        // Insert the columns inside a row
+        newRow.append(cols);
+
+        // Insert the row inside a table
+        $("table").append(newRow);
+
+        // Increase counter after each row insertion
+        counter++;
+      });
+
+      // Remove row when delete btn is clicked
+      $("table").on("click", "#deleteRow", function (event) {
+        $(this).closest("tr").remove();
+        counter -= 1
+      });
+    });
+
+  </script>
+</body>
+
 </html>
